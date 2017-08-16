@@ -14,7 +14,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   searchInputEmpty() {
-    console.log('run');
     if (this.searchValue !== '') {
       this.disabled = false;
     }else {
