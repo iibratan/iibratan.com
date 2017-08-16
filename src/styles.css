@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --navy: #22252C;
+  --gunmetal: #101010;
+  --rusty-red: #984B43;
+  --warm-yellow: #AB987A;
+}
+
+@font-face {
+  font-family: main;
+  src: url(/assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: heading;
+  src: url(/assets/fonts/OstrichSans-Medium.otf);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  background-color: var(--navy);
+  font-family: main;
+  font-size: large;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: heading;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 500%;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 190%;
+  color: var(--warm-yellow);
+}
+
+h4 {
+  font-size: 180%;
+  color: var(--rusty-red);
+}
+
+h3, h4 {
+  margin: 4% 0;
+}
+
+@import url('forms.css');

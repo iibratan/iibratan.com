@@ -1,0 +1,88 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--warm-yellow);
+}
+
+.address_details {
+  display: flex;
+  margin: 2% auto;
+  width: 80%;
+}
+
+#map {
+  width: 80%;
+}
+
+.address_container {
+  margin: 2% 0;
+  display: flex;
+  justify-content: center;
+  width: 16%;
+  padding: 0 2%;
+}
+
+.logo_divider {
+}
+
+.footer_logo {
+  margin: 1% 0;
+  height: 4vw;
+  background: url(/assets/images/logo_large.svg) center center no-repeat;
+}
+
+.inline_nav {
+  text-align: center;
+  margin: 1% 0;
+}
+
+.inline_nav a:hover {
+  text-decoration: underline;
+}
+
+.inline_nav_option {
+  display: inline-block;
+  margin: .5% .25%;
+}
+
+.footer_bottom {
+  height: 1vw;
+  margin: 1% 0;
+}
+
+.share_icon_container {
+  margin: auto;
+  height: 100%;
+  width: 10%;
+}
+
+.share_icon {
+  background: center center no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 25%;
+  filter: invert(1);
+  float: left;
+}
+
+.share_icon:nth-child(1) {
+  background-image: url(/assets/images/icons/social_icons/whatsapp_logo.png);
+}
+
+.share_icon:nth-child(2) {
+  background-image: url(/assets/images/icons/social_icons/reddit_icon.png);
+}
+
+.share_icon:nth-child(3) {
+  background-image: url(/assets/images/icons/social_icons/twitter_icon.png);
+}
+
+.share_icon:nth-child(4) {
+  background-image: url(/assets/images/icons/social_icons/facebook_icon.png);
+}
+
+.copyright {
+  margin: 0 .5%;
+  opacity: .5;
+  text-align: right;
+}

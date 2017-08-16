@@ -1,0 +1,75 @@
+:root {
+  --form-default-state: #333333;
+  --form-valid-state: #70c651;
+  --form-invalid-state: #dd4646;
+}
+
+form {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  padding: 2%;
+  width: 96%;
+  margin: 0 0 5% 0;
+  border: 1px solid var(--form-default-state);
+}
+
+input:focus {
+  border-color: var(--rusty-red);
+}
+
+input:valid {
+  border-color: var(--form-valid-state);
+}
+
+input:invalid {
+  border-color: var(--form-invalid-state);
+}
+
+label {
+  position: relative;
+}
+
+label span {
+  position: absolute;
+  left: 1px;
+  top: -.75em;
+  font-size: .75em;
+  background: var(--navy);
+  padding: 0 2%;
+  transition: .25s ease-in-out;
+  cursor: text;
+}
+
+label.empty input {
+  border-color: #d9d9d9;
+}
+
+label.empty span {
+  top: 20%;
+  transform: translateY(-20%);
+  font-size: inherit;
+  background: none;
+  color: #cccccc;
+}
+
+input[type="submit"] {
+  padding: 2%;
+  border: 1px solid var(--rusty-red);
+  background: var(--gunmetal);
+}

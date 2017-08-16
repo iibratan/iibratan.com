@@ -1,0 +1,16 @@
+<h2>Categories</h2>
+<ul *ngFor="let category of categories">
+  <h3>{{category.name}}</h3>
+  <li>Category ID: {{category.id}}</li>
+  <li>Parent ID: {{category.parentId}}</li>
+</ul>
+
+<h2>Products</h2>
+<ul *ngFor="let product of products">
+  <h3>{{product.name}}</h3>
+  <li>Product ID: {{product.id}}</li>
+  <li>Category: {{product.categoryId}}</li>
+  <li>Price: {{product.price}}</li>
+  <li>Model Number: {{product.modelNumber}}</li>
+  <li>Description: {{product.description}}</li>
+</ul>
