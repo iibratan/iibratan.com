@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  margin: 0;
+  width: 40%;
+}
+
+
+.searchbar {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.searchbar input[type="text"],
+.searchbar input[type="submit"] {
+  margin: 0;
+  padding: 1% 1.5%;
+  background: rgb(41, 41, 41);
+  border: none;
+  float: left;
+}
+
+.searchbar input[type="text"] {
+  width: 80%;
+}
+
+.searchbar input[type="submit"] {
+  width: 17%;
+  cursor: pointer;
+  background: #191919;
+}
