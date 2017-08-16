@@ -1,3 +1,4 @@
-<p>
-  search-bar works!
-</p>
+<form class="searchbar">
+  <input [ngModel]="searchValue" (ngModelChange)="searchInputEmpty()" type="text" name="search" placeholder="What are you looking for?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What are you looking for?'" >
+  <input type="submit" value="Search" [disabled]="disabled">
+</form>

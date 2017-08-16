@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
-
+  disabled = true;
+  searchValue: string;
   constructor() { }
 
   ngOnInit() {
   }
 
+  searchInputEmpty() {
+    if (this.searchValue !== '') {
+      this.disabled = false;
+    }else {
+      this.disabled = true;
+    }
+  }
 }

@@ -1,0 +1,31 @@
+.small_product_card {
+  width: 50%;
+  height: 35vh;
+  display: flex;
+  float: left;
+}
+
+.small_product_card:hover {
+  filter: grayscale(1);
+}
+
+.card_img_container {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background: var(--gunmetal) center center no-repeat;
+  background-size: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  padding: 0 2%;
+}
+
+.details p {
+  line-height: 175%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

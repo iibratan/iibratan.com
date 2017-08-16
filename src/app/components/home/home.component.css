@@ -1,0 +1,95 @@
+.homepage_top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75%;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), var(--navy)), url(/assets/images/home/light_bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 20%;
+  opacity: .75;
+}
+
+.message {
+  margin: 1% 0;
+}
+
+section,
+.medium_section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 1%;
+  text-align: center;
+}
+
+.view_more {
+  margin: 3vh 0;
+}
+
+.view_more:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--rusty-red);
+}
+
+.medium_section {
+  width: 80%;
+}
+
+.wide_section {
+  margin-bottom: 5%;
+}
+
+/*Tall Card*/
+.tall_card {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wide_cards_container {
+  display: flex;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  opacity: .9;
+}
+
+.bg:hover {
+  filter: grayscale(0);
+}
+
+.card_name {
+  width: 40%;
+  position: absolute;
+  padding: 1%;
+  background-color: var(--navy);
+}
+
+.tall_card:nth-child(1) .bg {
+  background-image: url(/assets/images/home/browse.jpg);
+  background-position: center;
+}
+
+.tall_card:nth-child(2) .bg {
+  background-image: url(/assets/images/home/build.jpg);
+  background-position: right;
+}
+
+.tall_card:nth-child(3) .bg {
+  background-image: url(/assets/images/placeholders/hdd_placeholder.jpg);
+  background-position: right;
+}

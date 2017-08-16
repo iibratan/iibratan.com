@@ -28,6 +28,8 @@ import { CartService } from './services/cart.service';
 import { ProductService } from './services/product.service';
 import { SearchService } from './services/search.service';
 import { SidebarService } from './services/sidebar.service';
+import { SmallCategoryCardComponent } from './components/cards/small-category-card/small-category-card.component';
+import { MediumProductCardComponent } from './components/cards/medium-product-card/medium-product-card.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -62,7 +64,9 @@ const appRoutes: Routes = [
     CartComponent,
     SearchComponent,
     AccountComponent,
-    BuilderComponent
+    BuilderComponent,
+    SmallCategoryCardComponent,
+    MediumProductCardComponent
   ],
   imports: [
     BrowserModule,

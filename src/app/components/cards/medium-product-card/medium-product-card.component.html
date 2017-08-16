@@ -1,0 +1,13 @@
+<a [routerLink]="['/products']" class="small_product_card">
+  <div class="card_img_container" *ngIf="!switchSides" [ngStyle]="{
+    'background-image': 'url(' + imgUrl + ')'
+  }"></div>
+  <div class="details">
+    <h3 class="product_name">Product name</h3>
+    <h4 class="product_price">AED XXXX</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aspernatur at autem commodi consectetur consequuntur dignissimos dolore et facere hic incidunt molestiae neque odit officiis, porro provident, quasi ut velit voluptatum! A accusamus aspernatur at eum laudantium nesciunt numquam, quaerat quidem, recusandae repudiandae, sequi voluptatum! Aliquid assumenda dolores fugiat iure iusto minus nisi optio, qui repellendus sunt tempore velit.</p>
+  </div>
+  <div class="card_img_container" *ngIf="switchSides" [ngStyle]="{
+    'background-image': 'url(' + imgUrl + ')'
+  }"></div>
+</a>
