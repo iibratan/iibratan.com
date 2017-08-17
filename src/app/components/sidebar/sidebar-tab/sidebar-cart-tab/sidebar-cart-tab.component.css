@@ -1,0 +1,124 @@
+.cards_container {
+  height: 78%;
+  margin-bottom: 2%;
+  overflow-y: auto;
+  background: var(--gunmetal);
+}
+
+.card {
+  display: flex;
+  height: 8vh;
+  width: 96%;
+  border-bottom: 1px solid var(--gunmetal);
+  padding: 2%;
+  background: var(--warm-yellow);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card .product_img {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.card .product_img img{
+  max-height: 95%;
+  max-width: 95%;
+}
+
+.detail_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  max-width: 35%;
+  float: left;
+}
+
+.card form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  float: left;
+}
+
+.card span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  transform: translateY(0px);
+  font-size: medium;
+  background: none;
+  padding: 0 8%;
+}
+
+.card label.empty span {
+  font-size: medium;
+  color: inherit;
+}
+
+.card input {
+  text-align: right;
+  font-size: medium;
+  border: 1px solid rgb(204, 204, 204);
+  margin: 0;
+  padding: 4% 6%;
+}
+
+.card .delete_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  height: 100%;
+  margin: 0 2%;
+  float: right;
+  cursor: pointer;
+}
+
+.card .product_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart_summary_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 16%;
+  padding: 2% 0;
+  background-color: var(--gunmetal);
+}
+
+.cart_summary_container .summary_text {
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.cart_summary_container .button {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  margin: 0 2%;
+  width: calc(42% - 2px);
+  padding: 2%;
+  border: 1px solid var(--rusty-red);
+  float: left;
+  transition: .125s ease-in-out;
+}
+
+.cart_summary_container .button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

@@ -1,12 +1,12 @@
 :root {
-  --form-default-state: #333333;
-  --form-valid-state: #70c651;
+  --form-default-state: #b9b9b9;
+  --form-valid-state: #29c655;
   --form-invalid-state: #dd4646;
 }
 
 form {
   margin: auto;
-  width: 90%;
+  width: calc(100% - 4px);
   display: flex;
   flex-direction: column;
 }
@@ -17,6 +17,7 @@ input {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
+  outline: none;
 }
 
 input[type="text"],
@@ -25,24 +26,16 @@ input[type="password"],
 input[type="number"] {
   padding: 2%;
   width: 96%;
-  margin: 0 0 5% 0;
+  margin: 0 0 0 0;
   border: 1px solid var(--form-default-state);
-}
-
-input:focus {
-  border-color: var(--rusty-red);
-}
-
-input:valid {
-  border-color: var(--form-valid-state);
-}
-
-input:invalid {
-  border-color: var(--form-invalid-state);
+  transition: .25s ease;
 }
 
 label {
   position: relative;
+  margin: 0 0 5% 0;
+  display: flex;
+  flex-direction: column;
 }
 
 label span {
@@ -56,6 +49,29 @@ label span {
   cursor: text;
 }
 
+label > .validation_message {
+  padding: 2% 0;
+  width: 100%;
+  border: 1px solid var(--rusty-red);
+  background: var(--rusty-red);
+  transition: 0.25s ease;
+}
+
+/*input.ng-untouched + .validation_message {
+  margin-top: -8%;
+  opacity: 0;
+}
+
+input.ng-touched.ng-invalid + .validation_message {
+  margin-top: 0%;
+  opacity: 1;
+}
+
+input.ng-valid + .validation_message {
+  margin-top: -8%;
+  opacity: 0;
+}*/
+
 label.empty input {
   border-color: #d9d9d9;
 }
@@ -68,8 +84,25 @@ label.empty span {
   color: #cccccc;
 }
 
+input.ng-untouched {
+  border-color: var(--form-default-state);
+}
+
+input.ng-touched.ng-invalid {
+  border-color: var(--rusty-red);
+}
+
+input.ng-valid {
+  border-color: var(--form-valid-state);
+}
+
 input[type="submit"] {
-  padding: 2%;
-  border: 1px solid var(--rusty-red);
-  background: var(--gunmetal);
+  padding: 3% 2%;
+  /*border: 1px solid var(--rusty-red);*/
+  background: var(--warm-yellow);
+  cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+  cursor: default;
 }

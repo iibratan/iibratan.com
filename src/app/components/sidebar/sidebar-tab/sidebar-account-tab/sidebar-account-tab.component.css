@@ -1,0 +1,39 @@
+:host {
+  height: 100%;
+  width: 100%;
+}
+
+.not_signed_in {
+  position: relative;
+}
+
+.account_tab_navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.account_tab_nav_button {
+  padding: 2%;
+  width: 45%;
+  text-align: center;
+  background: var(--gunmetal);
+  border-bottom: 1px solid var(--rusty-red);
+  cursor: pointer;
+}
+
+.form_container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 5% 0;
+}
+
+.forgot_password {
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.forgot_password:hover {
+  text-decoration: underline;
+}

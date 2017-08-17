@@ -1,0 +1,73 @@
+.sidebar_blackout {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 .5%;
+  background-color: var(--navy);
+  z-index: 2;
+}
+
+.sidebar_header .nav_item:nth-of-type(1) {
+  margin-left: inherit;
+}
+
+.sidebar_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7.5%;
+}
+
+.nav_item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: .5vw .5vw;
+  padding: .5vw .5vw;
+  border-bottom: 1px solid var(--rusty-red);
+  cursor: pointer;
+  transition: .25s ease-in-out;
+}
+
+.nav_item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cart_icon {
+  align-self: stretch;
+  width: 1.2vw;
+  background: url(/assets/images/icons/cart_icon.svg) left center no-repeat;
+  background-size: contain;
+}
+
+.hamburger_icon {
+  margin: 0 1.5vw 0 1vw;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.sidebar_tabs_container {
+  height: 75.5%;
+}
+
+.sidebar_tab_wrapper {
+  position: absolute;
+  width: 96%;
+  height: 75.5%;
+}
+
+.sidebar_footer {
+
+}

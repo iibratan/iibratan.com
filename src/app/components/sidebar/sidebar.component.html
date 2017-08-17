@@ -1,3 +1,32 @@
-<p>
-  sidebar works!
-</p>
+<div class="sidebar_blackout exit_button" (click)="closeSidebar()" [@fadeToggle]="sidebarOpen"></div>
+
+<div class="sidebar" [@rightInToggle]="sidebarOpen">
+  <div class="sidebar_header">
+    <span class="nav_item" (click)="changeTab('category')">Products</span>
+    <span class="nav_item" (click)="changeTab('account')">Account</span>
+    <span class="nav_item" (click)="changeTab('cart')">
+      <div class="cart_icon"></div> 9 - AED 9599
+    </span>
+    <div class="hamburger_icon exit_button" (click)="closeSidebar()">&#215;</div>
+  </div>
+
+  <div class="sidebar_tabs_container">
+    <div class="sidebar_tab_wrapper" [@cardToggle]="cardStates.account">
+      <app-sidebar-account-tab></app-sidebar-account-tab>
+    </div>
+    <div class="sidebar_tab_wrapper" [@cardToggle]="cardStates.cart">
+      <app-sidebar-cart-tab></app-sidebar-cart-tab>
+    </div>
+    <div class="sidebar_tab_wrapper" [@cardToggle]="cardStates.category">
+      <app-sidebar-catalogue-tab></app-sidebar-catalogue-tab>
+    </div>
+    <div class="sidebar_tab_wrapper" [@cardToggle]="cardStates.home">
+      <app-sidebar-home-tab></app-sidebar-home-tab>
+    </div>
+  </div>
+
+  <div class="sidebar_footer">
+
+  </div>
+
+</div>

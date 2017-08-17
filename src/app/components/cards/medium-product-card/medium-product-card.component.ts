@@ -17,7 +17,6 @@ export class MediumProductCardComponent implements OnInit {
     }else {
       this.switchSides = false;
     }
-    console.log(this.switchSides);
   }
 
   ngOnInit() {
