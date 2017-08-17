@@ -1,0 +1,16 @@
+<app-sidebar-tab [cardName]="'iibratan Account'">
+  <div class="home_container">
+    <div class="card" (click)="changeTab('category')">
+      <div class="bg"></div>
+      <div class="nav_description"><h3>Products</h3></div>
+    </div>
+    <div class="card" (click)="changeTab('account')">
+      <div class="nav_description"><h3>Account</h3></div>
+      <div class="bg"></div>
+    </div>
+    <div class="card" (click)="changeTab('cart')">
+      <div class="bg"></div>
+      <div class="nav_description"><h3>Cart</h3></div>
+    </div>
+  </div>
+</app-sidebar-tab>

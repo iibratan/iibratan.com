@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
@@ -30,6 +30,12 @@ import { SearchService } from './services/search.service';
 import { SidebarService } from './services/sidebar.service';
 import { SmallCategoryCardComponent } from './components/cards/small-category-card/small-category-card.component';
 import { MediumProductCardComponent } from './components/cards/medium-product-card/medium-product-card.component';
+import { SidebarTabComponent } from './components/sidebar/sidebar-tab/sidebar-tab.component';
+import { SidebarCatalogueTabComponent } from './components/sidebar/sidebar-tab/sidebar-catalogue-tab/sidebar-catalogue-tab.component';
+import { SidebarCartTabComponent } from './components/sidebar/sidebar-tab/sidebar-cart-tab/sidebar-cart-tab.component';
+import { SidebarHomeTabComponent } from './components/sidebar/sidebar-tab/sidebar-home-tab/sidebar-home-tab.component';
+import { SidebarSettingsTabComponent } from './components/sidebar/sidebar-tab/sidebar-settings-tab/sidebar-settings-tab.component';
+import { SidebarAccountTabComponent } from './components/sidebar/sidebar-tab/sidebar-account-tab/sidebar-account-tab.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -66,7 +72,13 @@ const appRoutes: Routes = [
     AccountComponent,
     BuilderComponent,
     SmallCategoryCardComponent,
-    MediumProductCardComponent
+    MediumProductCardComponent,
+    SidebarTabComponent,
+    SidebarCatalogueTabComponent,
+    SidebarCartTabComponent,
+    SidebarHomeTabComponent,
+    SidebarSettingsTabComponent,
+    SidebarAccountTabComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +87,7 @@ const appRoutes: Routes = [
       // {enableTracing: true}
     ),
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
   providers: [

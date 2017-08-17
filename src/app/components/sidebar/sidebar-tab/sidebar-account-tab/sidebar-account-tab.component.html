@@ -1,0 +1,98 @@
+<app-sidebar-tab [cardName]="'iibratan Account'">
+  <div class="not_signed_in" *ngIf="!auth">
+    <div class="account_tab_navigation">
+      <div class="account_tab_nav_button" (click)="setAsActive('signIn')">Sign In</div>
+      <div class="account_tab_nav_button" (click)="setAsActive('register')">Register</div>
+    </div>
+    <div class="form_container" [@accountCards]="cardStates.signIn">
+      <h3>Sign In</h3>
+      <form [formGroup]="signinForm">
+        <label>
+          <span>Email</span>
+          <input type="email" formControlName="email"  required>
+          <small [@validationMessage] class="validation_message"
+                 *ngIf="signinForm.controls['email'].invalid
+                 &&
+                 signinForm.controls['email'].touched"
+          >Please enter a valid email address</small>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" formControlName="password" required>
+          <small [@validationMessage] class="validation_message"
+                 *ngIf="
+                 signinForm.controls['password'].invalid
+                 &&
+                 signinForm.controls['password'].touched"
+          >Please enter a valid password. Passwords require:
+            <ul style="text-align: left">
+              <li>Atleast 8 Characters</li>
+              <li>1 capital letter</li>
+              <li>1 lower case letter</li>
+              <li>1 number</li>
+            </ul>
+          </small>
+        </label>
+        <small class="forgot_password" (click)="setAsActive('forgotPassword')">Forgot Password?</small>
+        <input type="submit" value="Sign In" [disabled]="!signinForm.valid">
+      </form>
+    </div>
+    <div class="form_container" [@accountCards]="cardStates.forgotPassword">
+      <h3>Forget Password</h3>
+      <form [formGroup]="forgotPasswordForm">
+        <label>
+          <span>Email</span>
+          <input type="email" formControlName="email"  required>
+          <small [@validationMessage] class="validation_message"
+                 *ngIf="forgotPasswordForm.controls['email'].invalid
+                 &&
+                 forgotPasswordForm.controls['email'].touched"
+          >Please enter a valid email address</small>
+        </label>
+        <input type="submit" value="Send Reset Email" [disabled]="!forgotPasswordForm.valid">
+      </form>
+    </div>
+    <div class="form_container" [@accountCards]="cardStates.register">
+      <h3>Register</h3>
+      <form [formGroup]="registerForm">
+        <label>
+          <span>Email</span>
+          <input type="email" formControlName="email" required>
+          <small [@validationMessage] class="validation_message"
+                 *ngIf="registerForm.controls['email'].invalid
+                 &&
+                 registerForm.controls['email'].touched"
+          >Please enter a valid email address</small>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" formControlName="password" required>
+          <small [@validationMessage] class="validation_message"
+                 *ngIf="registerForm.controls['password'].invalid
+                 &&
+                 registerForm.controls['password'].touched"
+          >Please enter a valid password. Passwords require:
+            <ul style="text-align: left">
+              <li>Atleast 6 Characters</li>
+              <li>1 capital letter</li>
+              <li>1 lower case letter</li>
+              <li>1 number</li>
+            </ul>
+          </small>
+        </label>
+        <label>
+          <span>Confirm Password</span>
+          <input type="password" formControlName="confirmPassword" required>
+          <small [@validationMessage] class="validation_message"
+                 *ngIf="registerForm.controls['confirmPassword'].invalid
+                 &&
+                 registerForm.controls['confirmPassword'].touched">The passwords do not match.</small>
+        </label>
+        <input type="submit" value="Register" [disabled]="!registerForm.valid">
+      </form>
+    </div>
+  </div>
+  <div class="signed_in" *ngIf="auth">
+    <h3>Signed In</h3>
+  </div>
+</app-sidebar-tab>

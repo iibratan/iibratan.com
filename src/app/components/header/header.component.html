@@ -1,10 +1,10 @@
 <header>
   <a routerLink="/" class="header_logo"></a>
-  <!--<app-searchbar *ngIf="showSearchbar"></app-searchbar>-->
+  <app-search-bar *ngIf="showSideBar"></app-search-bar>
   <span class="nav_item products_nav" (click)="openSidebar('category')">Products</span>
   <span class="nav_item account_nav" (click)="openSidebar('account')">Account</span>
   <span class="nav_item cart_nav" (click)="openSidebar('cart')">
-    <div class="cart_icon"></div> 9 - 9955
+    <div class="cart_icon"></div> 9 - AED 9599
   </span>
   <div class="hamburger_icon" (click)="openSidebar('home')">&#9776;</div>
 </header>

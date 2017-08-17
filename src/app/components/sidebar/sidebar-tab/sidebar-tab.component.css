@@ -1,0 +1,21 @@
+.sidebar_tabs_container {
+  height: 75.5%;
+}
+
+.sidebar_tab {
+  height: 100%;
+}
+
+.heading_container {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab_content_container {
+  width: 95%;
+  margin: auto;
+  height: 85%;
+  overflow: auto;
+}
