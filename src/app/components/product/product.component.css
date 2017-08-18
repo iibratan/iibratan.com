@@ -1,0 +1,44 @@
+.product-container {
+  margin: 2.5% auto;
+  width: 90%;
+  background: var(--gunmetal);
+}
+
+.gap-line {
+  margin: auto;
+  width: 98%;
+  height: 1px;
+  background: #fff;
+  opacity: .25;
+}
+
+.upper-container {
+  display: flex;
+}
+
+app-image-carousel {
+  height: 50vh;
+  width: 100%;
+}
+
+app-product-summary {
+  width: 28%;
+  padding: .125% 1%;
+}
+
+.suggested-products {
+  padding: 2% 1% 1% 1%;
+}
+
+.suggested-products > h2{
+  margin: 0;
+  padding: .5%;
+  color: var(--warm-yellow);
+}
+
+.suggestion-product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: .5%;
+}
+

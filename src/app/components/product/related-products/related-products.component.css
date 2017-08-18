@@ -1,0 +1,30 @@
+.related-products-container {
+  margin: auto;
+  padding: 1%;
+}
+
+.relation-group {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 1%;
+}
+
+.relation-group:last-child {
+  margin: 0;
+}
+
+.group-title {
+  margin-right: .75%;
+  padding: .5%;
+  background: var(--warm-yellow);
+}
+
+.related-product {
+  margin: 0 .25%;
+  padding: .5%;
+  background: var(--blackboard);
+  color: var(--warm-yellow);
+  cursor: pointer;
+}

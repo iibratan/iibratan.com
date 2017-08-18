@@ -1,9 +1,13 @@
+@import url('forms.css');
 /* You can add global styles to this file, and also import other style files */
 :root {
   --navy: #22252C;
   --gunmetal: #101010;
   --rusty-red: #984B43;
   --warm-yellow: #AB987A;
+  /*--blackboard: #282F44;*/
+  /*--blackboard: #D1C6AD;*/
+  --blackboard: #191B1E;
 }
 
 @font-face {
@@ -60,4 +64,3 @@ h3, h4 {
   margin: .5em 0;
 }
 
-@import url('forms.css');
