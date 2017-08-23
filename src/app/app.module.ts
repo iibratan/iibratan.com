@@ -28,6 +28,7 @@ import { CartService } from './services/cart.service';
 import { ProductService } from './services/product.service';
 import { SearchService } from './services/search.service';
 import { SidebarService } from './services/sidebar.service';
+import { Option1Component } from './components/account/option1/option1.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -62,7 +63,8 @@ const appRoutes: Routes = [
     CartComponent,
     SearchComponent,
     AccountComponent,
-    BuilderComponent
+    BuilderComponent,
+    Option1Component
   ],
   imports: [
     BrowserModule,
