@@ -57,56 +57,7 @@
 }
 
 .displayedOption1 {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-column-gap: 0.5em;
   padding: 1.5% 5% 0 5%;
-
-}
-.item1 {
-  grid-column:  1 / span 1;
-  grid-row:  1 / span 1;
-}
-.item2 {
-  grid-column:  1 / span 1;
-  grid-row:  2 / span 1;
-}
-.item3 {
-  grid-column:  1 / span 1;
-  grid-row:  3 / span 1;
-}
-.item4 {
-  grid-column:  1 / span 1;
-  grid-row:  4 / span 1;
-}
-.item5 {
-  grid-column:  2 / span 1;
-  grid-row:  1 / span 2;
-}
-.item6 {
-  grid-column:  2 / span 1;
-  grid-row:  3 / span 2;
-}
-.item5, .item6 {
-  background-color: #101010;
-  color: var(--rusty-red);
-  cursor: pointer;
-  margin: 10%;
-  border: none;
-}
-.item5:hover, .item6:hover {
-  background-color: #1e1e1e;
-}
-
-
-.nameInput {
-  border: none;
-  border-bottom: 1px solid var(--rusty-red);
-  padding-bottom: 4%;
-}
-
-.displayOption2 {
-
 }
 
 .do2Title {
@@ -114,6 +65,23 @@
 }
 .do2AddressList {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-column-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
 }
+
+.do2AddressList > div {
+  background-color: #393939;
+  margin: 2%;
+}
+
+.editButton {
+  z-index: 10;
+  text-align: end;
+  font-size: small;
+  padding: 0.5%;
+  position: absolute;
+}
+.editButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+

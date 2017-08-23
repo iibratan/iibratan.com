@@ -3,19 +3,23 @@
     Account
   </h1>
   <div class="displayedOption1" *ngIf="show1">
-    <h4 class="item1">First Name: </h4>
-    <input type="text" class="nameInput item2" [(ngModel)]="FirstNameOnServer"><br>
-    <h4 class="item3">Last Name: </h4>
-    <input type="text" class="nameInput item4" [(ngModel)]="LastNameOnServer"><br>
-    <button class="item5">Change Password</button>
-    <button class="item6">Forgot Password</button>
-
+    <h3 class="do1Title">Personal Information</h3>
+    <div>
+    <p>Firstnamehere, Lastnamehere<br>
+      emailmcdon@supafly.com<br>
+      10th of GluckTober, 1783<br>
+      United Republic of Polandistan
+      </p>
+    </div>
   </div>
 
   <div class="displayOption2" *ngIf="show2">
     <h3 class="do2Title">Addresses</h3>
     <div class="do2AddressList"> <!-- Add loop for displaying multiple addresses -->
       <div>
+        <div class="editButton" >
+          Edit
+        </div>
         <h4>Address 1</h4>
         <p>Address Line 1 <br>
           Address Line 2 <br>
@@ -25,6 +29,9 @@
       </div>
 
       <div>
+        <div class="editButton" >
+          Edit
+        </div>
         <h4>Address 2</h4>
         <p>Address Line 1 <br>
           Address Line 2 <br>
