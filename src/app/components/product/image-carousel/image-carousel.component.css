@@ -63,8 +63,8 @@
 
 .img-selector-circle {
   margin: 0 .5%;
-  height: .75vw;
-  width: .75vw;
+  height: .5vw;
+  width: .5vw;
   border-radius: 100%;
   border: .1em solid var(--sand-gold);
   transition: .125s ease;
