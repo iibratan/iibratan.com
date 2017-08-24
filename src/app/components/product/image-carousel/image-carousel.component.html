@@ -2,9 +2,9 @@
   <img [src]="currentImage" [@imgAnimation]="imgContainerState">
 </div>
 <div class="controls">
-  <div class="left-button control_button" (click)="leftClick()">&#x276C;</div>
+  <div class="left-button control-button" (click)="leftClick()">&#x276C;</div>
   <div class="img-selector-circles">
     <div class="img-selector-circle" *ngFor="let imgUrl of imgUrls; let i = index" (click)="selectImage(i)"></div>
   </div>
-  <div class="right-button control_button" (click)="rightClick()">&#x276D;</div>
+  <div class="right-button control-button" (click)="rightClick()">&#x276D;</div>
 </div>

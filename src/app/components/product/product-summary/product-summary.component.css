@@ -1,10 +1,6 @@
 :host {
-  width: auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background: var(--blackboard);
+  margin: 0 0 .5% 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,99 +15,87 @@ h4 {
   font-size: 2.2em;
 }
 
-.product-name {
-  color: var(--warm-yellow);
-  text-align: center;
-  overflow-x: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-}
-
-.product-name > h2 {
-  overflow-x: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .tree {
-  margin-top: 7%;
+  color: var(--sand-gold);
+  padding: 1% 0 2%;
 }
 
 .tree > a:hover {
   text-decoration: underline;
 }
 
-.product-price {
+.details {
+  display: flex;
+}
+
+.product-name {
+  align-self: center;
+  color: var(--sand-gold);
+  overflow-x: hidden;
+  padding: 0 1% 0 0;
+}
+
+.product-name > h2 {
+  overflow-x: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.stock {
-  text-align: center;
-  background: var(--rusty-red);
-  padding: 5% 10%;
-}
-
-.share-icons-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  padding: 0 1%;
+  background: var(--rusty-red);
+  text-align: center;
+  white-space: nowrap;
 }
 
-.share-icon {
-  height: 1vw;
-  width: 1vw;
-  margin: 0 2%;
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
-
-.share-icon > img {
-  max-width: 100%;
-  max-height: 100%;
+.price-container > h4 {
+  color: #ffffff;
 }
 
 .cart-options {
-  min-width: 60%;
-  height: 5vh;
+  width: auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: 0;
+  float: right;
+  background: var(--sand-gold);
 }
 
-.cart-options > label {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.qty {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  top: 0;
-  transform: translateY(0px);
-  background: none;
-  padding: 0 10%;
-  font-size: medium;
+label {
+  margin: 0;
+  display: none;
 }
 
 input[type="number"] {
-  width: 88%;
-  height: 92%;
-  text-align: right;
-  margin: 0;
-  padding: 4% 6%;
-  font-size: medium;
+  display: inline;
+  text-align: center;
+  padding: 5% 0;
+  margin: 0 5%;
+  width: 3em;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type="submit"] {
-  width: 70%;
+  height: 100%;
+  padding: 0 20%;
+  transition: .125s ease;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(1.2);
 }
 
 

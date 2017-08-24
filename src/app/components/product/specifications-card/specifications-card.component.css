@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .spec-card {
-  padding: 1%;
+  padding: 1% 0;
   margin-top: .5%;
 }
 
@@ -28,5 +28,5 @@ h1, h2, h3, h4, h5 {
 }
 
 .spec-heading {
-  color: var(--warm-yellow);
+  color: var(--sand-gold);
 }

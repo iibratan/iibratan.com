@@ -1,13 +1,31 @@
 <div class="product-container">
   <div class="upper-container">
-    <app-image-carousel [imgUrls]="imgUrls" ></app-image-carousel>
     <app-product-summary></app-product-summary>
+    <app-image-carousel [imgUrls]="imgUrls" ></app-image-carousel>
   </div>
-  <div class="gap-line"></div>
-  <app-related-products></app-related-products>
-  <div class="gap-line"></div>
-  <app-product-detail-cards></app-product-detail-cards>
-  <div class="gap-line"></div>
+  <div class="related-products-wrapper">
+    <app-related-products></app-related-products>
+    <app-related-products></app-related-products>
+  </div>
+  <div class="detail-cards-wrapper">
+    <div class="cards-nav-container">
+      <div class="card-nav-button" (click)="openCard('overview')"> <h3>Overview</h3> </div>
+      <div class="card-nav-button" (click)="openCard('specs')"> <h3>Specifications</h3> </div>
+      <div class="card-nav-button" (click)="openCard('review')"> <h3>Reviews</h3> </div>
+    </div>
+    <div class="cards-container">
+      <div class="overview" [@cardToggle]="cardStates.overview">
+        <h2>Coming Soon!</h2>
+      </div>
+      <div class="specs" [@cardToggle]="cardStates.specs">
+        <app-specifications-card></app-specifications-card>
+        <app-specifications-card></app-specifications-card>
+      </div>
+      <div class="review" [@cardToggle]="cardStates.review">
+        <h2>Coming Soon!</h2>
+      </div>
+    </div>
+  </div>
   <div class="suggested-products">
     <h2>Suggested, just for you.</h2>
     <div class="suggestion-product-cards-container">

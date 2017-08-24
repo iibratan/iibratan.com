@@ -1,12 +1,11 @@
-@import url('forms.css');
 /* You can add global styles to this file, and also import other style files */
+@import url('forms.css');
+
 :root {
   --navy: #22252C;
   --gunmetal: #101010;
   --rusty-red: #984B43;
-  --warm-yellow: #AB987A;
-  /*--blackboard: #282F44;*/
-  /*--blackboard: #D1C6AD;*/
+  --sand-gold: #AB987A;
   --blackboard: #191B1E;
 }
 
@@ -52,7 +51,7 @@ h2 {
 
 h3 {
   font-size: 1.9em;
-  color: var(--warm-yellow);
+  color: var(--sand-gold);
 }
 
 h4 {

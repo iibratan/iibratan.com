@@ -20,11 +20,11 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         transform: 'translateX(0)',
       })),
       transition('right <=> active', [
-          animate('.200s ease')
+          animate('.250s ease')
         ]
       ),
       transition('left <=> active', [
-          animate('.200s ease')
+          animate('.250s ease')
         ]
       ),
       transition('left <=> right', [
@@ -56,10 +56,10 @@ export class ImageCarouselComponent implements OnInit {
       } else if (this.imgContainerState = 'right') {
         this.imgContainerState = 'left';
       }
-    }, 220);
+    }, 250);
     setTimeout( () => {
       this.imgContainerState = 'active';
-    }, 220);
+    }, 250);
   }
 
   selectImage(imageIndex: number) {

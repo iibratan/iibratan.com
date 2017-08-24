@@ -1,7 +1,8 @@
 :host {
   position: relative;
-  height:100%;
-  width: auto;
+  height: 50vh;
+  width: 100%;
+  display: block;
 }
 
 .img-container {
@@ -10,11 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  background: var(--gunmetal);
 }
 
 .img-container > img {
-  max-height: 95%;
-  max-width: 95%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .controls {
@@ -22,20 +25,22 @@
   height: 100%;
   width: 100%;
   top: 0;
+  transition: .125s ease;
 }
 
-.control_button {
+.controls:hover .control-button{
+  opacity: 1;
+}
+
+.control-button {
   display: flex;
   align-items: center;
   height: 100%;
-  font-size: 15em;
+  font-size: 11em;
   padding: 0 3%;
   transition: .25s ease;
   cursor: pointer;
-}
-
-.control_button:hover {
-  background: rgba(255, 255, 255, .5);
+  opacity: 0;
 }
 
 .left-button {
@@ -61,7 +66,7 @@
   height: .75vw;
   width: .75vw;
   border-radius: 100%;
-  border: .1em solid var(--warm-yellow);
+  border: .1em solid var(--sand-gold);
   transition: .125s ease;
   cursor: pointer;
 }

@@ -15,7 +15,7 @@
 .searchbar input[type="submit"] {
   margin: 0;
   padding: 1% 1.5%;
-  border: 1px solid var(--warm-yellow);
+  border: 1px solid var(--sand-gold);
   float: left;
 }
 
@@ -27,5 +27,5 @@
 .searchbar input[type="submit"] {
   width: 17%;
   cursor: pointer;
-  background: var(--warm-yellow);
+  background: var(--sand-gold);
 }

@@ -39,9 +39,8 @@ import { SidebarAccountTabComponent } from './components/sidebar/sidebar-tab/sid
 import { ImageCarouselComponent } from './components/product/image-carousel/image-carousel.component';
 import { ProductSummaryComponent } from './components/product/product-summary/product-summary.component';
 import { RelatedProductsComponent } from './components/product/related-products/related-products.component';
-import { ProductDetailCardsComponent } from './components/product/product-detail-cards/product-detail-cards.component';
 import { SuggestionCardComponent } from './components/product/suggestion-card/suggestion-card.component';
-import { SpecificationsCardComponent } from './components/product/product-detail-cards/specifications-card/specifications-card.component';
+import { SpecificationsCardComponent } from './components/product/specifications-card/specifications-card.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -88,7 +87,6 @@ const appRoutes: Routes = [
     ImageCarouselComponent,
     ProductSummaryComponent,
     RelatedProductsComponent,
-    ProductDetailCardsComponent,
     SuggestionCardComponent,
     SpecificationsCardComponent
   ],
