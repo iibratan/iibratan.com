@@ -28,12 +28,17 @@ import { CartService } from './services/cart.service';
 import { ProductService } from './services/product.service';
 import { SearchService } from './services/search.service';
 import { SidebarService } from './services/sidebar.service';
-import { Option1Component } from './components/account/option1/option1.component';
+import { PersonalComponent } from './components/account/personal/personal.component';
+import { AddressesComponent } from './components/account/addresses/addresses.component';
+import { OrdersComponent } from './components/account/orders/orders.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'account', component: AccountComponent},
+  {path: 'account/personal', component: PersonalComponent},
+  {path: 'account/addresses', component: AddressesComponent},
+  {path: 'account/orders', component: OrdersComponent},
   {path: 'cart', component: CartComponent},
   {path: 'catalogue/:id', component: CatalogueComponent},
   {path: 'partners', component: PartnersComponent},
@@ -64,7 +69,9 @@ const appRoutes: Routes = [
     SearchComponent,
     AccountComponent,
     BuilderComponent,
-    Option1Component
+    PersonalComponent,
+    AddressesComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+.main_container {
+  height: 75%;
+  text-align: center;
+  background-color: #282d34;
+  padding-bottom: 4.5%;
+}
+
+.main_container > h1 {
+  margin: 0;
+  padding: 2% 0 0 0;
+}
+
+.do2Title {
+  margin: 0;
+}
+.do2AddressList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.do2AddressList > div {
+  background-color: #161a1f;
+  margin: 2%;
+}
+
+.editButton {
+  z-index: 10;
+  text-align: end;
+  font-size: small;
+  padding: 0.5%;
+  position: absolute;
+}
+.editButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+.main_container {
+  height: 75%;
+  text-align: center;
+  background-color: #282d34;
+  padding-bottom: 4.5%;
+}
+
+.main_container > h1 {
+  margin: 0;
+  padding: 2% 0 0 0;
+}
+
+.displayedOption1 {
+  padding: 1.5% 5% 0 5%;
+}
+.do1Title {
+  margin: 0;
+}
+.bunch {
+  background-color: #161a1f;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 13.5vw;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+.bunch > img {
+  max-width: 13.5vw;
+  /*max-height: 60%;*/
+  justify-self: center;
+}
+.bunch > div {
+  align-self: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
