@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 75%;
-  width: 100%;
+  height: 75vh;
   background: linear-gradient(rgba(255, 255, 255, 0), var(--navy)), url(/assets/images/home/light_bg.jpg) center center no-repeat;
   background-size: cover;
 }
@@ -45,6 +44,10 @@ section,
 }
 
 /*Tall Card*/
+.wide_cards_container {
+  display: flex;
+}
+
 .tall_card {
   position: relative;
   width: 100%;
@@ -53,10 +56,6 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.wide_cards_container {
-  display: flex;
 }
 
 .bg {
@@ -92,4 +91,38 @@ section,
 .tall_card:nth-child(3) .bg {
   background-image: url(/assets/images/placeholders/hdd_placeholder.jpg);
   background-position: right;
+}
+
+@media only screen and (max-width: 480px) {
+  .homepage_top {
+    margin-top: -7.5vh;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  app-search-bar {
+    width: 96%;
+    height: 6vh;
+  }
+
+  .medium_section {
+    width: 96%;
+  }
+
+  .wide_cards_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tall_card {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -20,7 +20,12 @@ export class AppComponent implements OnInit, OnDestroy {
         projectId: 'iibratan-aade0',
         storageBucket: 'iibratan-aade0.appspot.com',
         messagingSenderId: '817576896569'
-      });
+    });
+    // Solves mobile keyboard resizing issue
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    const viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const viewport = document.querySelector('meta[name=viewport]');
+    viewport.setAttribute('content', 'height=' + viewHeight + 'px, width=' + viewWidth + 'px, initial-scale=1.0');
   }
   ngOnDestroy() {}
 }

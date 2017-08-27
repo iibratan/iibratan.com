@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('forms.css');
+
 :root {
   --navy: #22252C;
   --gunmetal: #101010;
@@ -16,15 +18,11 @@
   src: url(/assets/fonts/OstrichSans-Medium.otf);
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   margin: auto;
   background-color: var(--navy);
-  font-family: main;
-  font-size: large;
+  font-family: main, sans-serif;
+  font-size: 1.35vh;
   color: #fff;
 }
 
@@ -34,25 +32,25 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: heading;
+  font-family: heading, sans-serif;
   font-weight: 100;
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 6.5vh;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 4vh;
 }
 
 h3 {
-  font-size: 1.9em;
+  font-size: 2.5vh;
   color: var(--warm-yellow);
 }
 
 h4 {
-  font-size: 1.8em;
+  font-size: 2.3vh;
   color: var(--rusty-red);
 }
 
@@ -60,4 +58,8 @@ h3, h4 {
   margin: .5em 0;
 }
 
-@import url('forms.css');
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 2vh;
+  }
+}

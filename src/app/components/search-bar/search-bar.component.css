@@ -1,14 +1,15 @@
 :host {
-  display: block;
+  display: flex;
   margin: 0;
   width: 40%;
 }
 
 
 .searchbar {
-  display: block;
+  display: flex;
   margin: 0;
   width: 100%;
+  flex-direction: row;
 }
 
 .searchbar input[type="text"],
