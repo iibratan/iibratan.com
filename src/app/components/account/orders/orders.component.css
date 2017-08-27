@@ -9,3 +9,63 @@
   margin: 0;
   padding: 2% 0 0 0;
 }
+
+.main_container > h1:hover {
+  cursor: pointer;
+}
+
+.do3Title {
+  margin: 0;
+}
+
+.displayOption3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+.orderWrapper {
+  background-color: var(--gunmetal);
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
+  grid-template-rows: 3vw auto 3vw;
+  grid-gap: 0.4em;
+}
+.orderWrapper > div {
+  background-color: var(--gunmetal);
+}
+.orderHeading {
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: center;
+}
+.products {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+.qty {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+}
+.price {
+  grid-column: 4;
+  grid-row: 1;
+  align-self: center;
+}
+.total {
+  grid-column: 5;
+  grid-row: 1;
+  align-self: center;
+}
+.status {
+  grid-column: 1/6;
+  grid-row: 3;
+  align-self: center;
+}
+.orderItems {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: start;
+}

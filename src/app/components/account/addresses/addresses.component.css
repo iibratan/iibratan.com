@@ -10,6 +10,10 @@
   padding: 2% 0 0 0;
 }
 
+.main_container > h1:hover {
+  cursor: pointer;
+}
+
 .do2Title {
   margin: 0;
 }
