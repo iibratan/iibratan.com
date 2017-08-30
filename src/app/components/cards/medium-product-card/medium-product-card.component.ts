@@ -6,17 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./medium-product-card.component.css']
 })
 export class MediumProductCardComponent implements OnInit {
-  static cardCount = 0;
-  switchSides = false;
+  private static cardCount = 0;
+  private static _switchSides = false;
+  protected switchSides: boolean;
+  private modNumber: number;
+  viewport: string;
 
   constructor() {
     MediumProductCardComponent.cardCount ++;
 
-    if (MediumProductCardComponent.cardCount % 4 === 3 || MediumProductCardComponent.cardCount % 4 === 0) {
-      this.switchSides = true;
+    const mq = window.matchMedia('(max-width: 480px)');
+
+    if (mq.matches) {
+      this.modNumber = 1;
     }else {
-      this.switchSides = false;
+      this.modNumber = 3;
     }
+
+    if (MediumProductCardComponent.cardCount % this.modNumber === 0) {
+      MediumProductCardComponent._switchSides = !MediumProductCardComponent._switchSides;
+    }
+
+    this.switchSides = MediumProductCardComponent._switchSides;
   }
 
   ngOnInit() {

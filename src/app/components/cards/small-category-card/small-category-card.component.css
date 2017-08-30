@@ -19,3 +19,10 @@
   padding: 1% 10%;
   background-color: var(--gunmetal);
 }
+
+@media only screen and (max-width: 480px) {
+  .x_small_card {
+    width: 50%;
+    height: 25vh;
+  }
+}

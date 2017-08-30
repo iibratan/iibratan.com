@@ -1,15 +1,14 @@
 header {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 7.5%;
+  height: 7.5vh;
   background: var(--navy);
 }
 
 .header_logo {
   margin: 0 23.5% 0 1.5%;
   height: 100%;
-  width: 5%;
+  width: 10vh;
   background: url(/assets/images/logo_large.svg) center no-repeat;
   background-size: 80%;
 }
@@ -19,7 +18,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: .5vw .5vw;
+  margin: 0 .5vw;
   padding: .5vw .5vw;
   border-bottom: 1px solid var(--rusty-red);
   cursor: pointer;
@@ -36,7 +35,8 @@ header {
 
 .cart_icon {
   align-self: stretch;
-  width: 1.2vw;
+  width: 1.5vw;
+  margin-right: .2vw;
   background: url(/assets/images/icons/cart_icon.svg) left center no-repeat;
   background-size: contain;
 }
@@ -45,4 +45,67 @@ header {
   margin: 0 1.5vw 0 1vw;
   font-size: x-large;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7.5vh;
+    margin-bottom: 7.5vh;
+    background: var(--navy);
+  }
+
+  .header_logo {
+    margin: 0;
+    height: 100%;
+    width: 10vh;
+    background: url(/assets/images/logo_large.svg) center no-repeat;
+    background-size: 80%;
+  }
+
+  .nav_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+    padding: 1vw;
+  }
+
+  app-search-bar {
+    position: absolute;
+    margin: 6.5vh 2vw 0;
+    width: 96vw;
+    height: 6vh;
+  }
+
+  .cart_nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: var(--warm-yellow);
+    padding: 1.5vh 0;
+  }
+
+  .cart_icon {
+    align-self: stretch;
+    width: 5vw;
+    background: url(/assets/images/icons/cart_icon.svg) left center no-repeat;
+    background-size: contain;
+  }
+
+  .nav_item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger_icon {
+    margin: 0 2.5vw 0 1vw;
+    font-size: x-large;
+    cursor: pointer;
+  }
 }
