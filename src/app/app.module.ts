@@ -36,6 +36,11 @@ import { SidebarCartTabComponent } from './components/sidebar/sidebar-tab/sideba
 import { SidebarHomeTabComponent } from './components/sidebar/sidebar-tab/sidebar-home-tab/sidebar-home-tab.component';
 import { SidebarSettingsTabComponent } from './components/sidebar/sidebar-tab/sidebar-settings-tab/sidebar-settings-tab.component';
 import { SidebarAccountTabComponent } from './components/sidebar/sidebar-tab/sidebar-account-tab/sidebar-account-tab.component';
+import { ImageCarouselComponent } from './components/product/image-carousel/image-carousel.component';
+import { ProductSummaryComponent } from './components/product/product-summary/product-summary.component';
+import { RelatedProductsComponent } from './components/product/related-products/related-products.component';
+import { SuggestionCardComponent } from './components/product/suggestion-card/suggestion-card.component';
+import { SpecificationsCardComponent } from './components/product/specifications-card/specifications-card.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -78,7 +83,12 @@ const appRoutes: Routes = [
     SidebarCartTabComponent,
     SidebarHomeTabComponent,
     SidebarSettingsTabComponent,
-    SidebarAccountTabComponent
+    SidebarAccountTabComponent,
+    ImageCarouselComponent,
+    ProductSummaryComponent,
+    RelatedProductsComponent,
+    SuggestionCardComponent,
+    SpecificationsCardComponent
   ],
   imports: [
     BrowserModule,

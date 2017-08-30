@@ -99,7 +99,7 @@ input.ng-valid {
 input[type="submit"] {
   padding: 3% 2%;
   /*border: 1px solid var(--rusty-red);*/
-  background: var(--warm-yellow);
+  background: var(--sand-gold);
   cursor: pointer;
 }
 

@@ -1,0 +1,76 @@
+:host {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  display: block;
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: var(--gunmetal);
+}
+
+.img-container > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.controls {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  transition: .125s ease;
+}
+
+.controls:hover .control-button{
+  opacity: 1;
+}
+
+.control-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 11em;
+  padding: 0 3%;
+  transition: .25s ease;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.left-button {
+  float: left;
+}
+.right-button {
+  float: right;
+}
+
+.img-selector-circles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0;
+}
+
+.img-selector-circle {
+  margin: 0 .5%;
+  height: .5vw;
+  width: .5vw;
+  border-radius: 100%;
+  border: .1em solid var(--sand-gold);
+  transition: .125s ease;
+  cursor: pointer;
+}
+
+.img-selector-circle:hover {
+  background: rgba(255, 255, 255, .5);
+}

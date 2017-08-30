@@ -1,7 +1,7 @@
 footer {
   display: flex;
   flex-direction: column;
-  background: var(--warm-yellow);
+  background: var(--sand-gold);
 }
 
 .address_details {

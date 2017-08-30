@@ -5,7 +5,8 @@
   --navy: #22252C;
   --gunmetal: #101010;
   --rusty-red: #984B43;
-  --warm-yellow: #AB987A;
+  --sand-gold: #AB987A;
+  --blackboard: #191B1E;
 }
 
 @font-face {
@@ -45,8 +46,9 @@ h2 {
 }
 
 h3 {
+  color: var(--sand-gold);
   font-size: 2.5vh;
-  color: var(--warm-yellow);
+
 }
 
 h4 {

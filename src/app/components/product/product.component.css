@@ -1,0 +1,51 @@
+.product-container {
+  margin: 2% auto;
+  width: 90%;
+}
+
+.upper-container {
+}
+
+.related-products-wrapper {
+  padding: 1% 0;
+}
+
+app-related-products:not(:last-child) {
+  margin-bottom: 1%;
+}
+
+.detail-cards-wrapper {}
+
+.cards-nav-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1% 0 0;
+}
+
+.card-nav-button {
+  padding: 0 .75%;
+  margin-right: 1%;
+  border-bottom: 1px solid var(--sand-gold);
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.card-nav-button:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+.cards-container h2 {
+  margin: 0;
+}
+
+.suggested-products > h2{
+  margin: 0;
+  padding: 1% 0 .5%;
+  color: var(--sand-gold);
+}
+
+.suggestion-product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}

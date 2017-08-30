@@ -1,0 +1,100 @@
+:host {
+  display: flex;
+  margin: 0 0 .5% 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h4 {
+  font-size: 2.2em;
+}
+
+.tree {
+  color: var(--sand-gold);
+  padding: 1% 0 2%;
+}
+
+.tree > a:hover {
+  text-decoration: underline;
+}
+
+.details {
+  display: flex;
+}
+
+.product-name {
+  color: var(--sand-gold);
+  overflow-x: hidden;
+}
+
+.product-name > h2 {
+  overflow-x: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1%;
+  background: var(--rusty-red);
+  text-align: center;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.price-container > h4 {
+  color: #ffffff;
+}
+
+.cart-options {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  float: right;
+  background: var(--sand-gold);
+}
+
+label {
+  margin: 0;
+  display: none;
+}
+
+input[type="number"] {
+  display: inline;
+  text-align: center;
+  padding: .5vh 0;
+  margin: 0 .5vw;
+  width: 3em;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="submit"] {
+  height: 100%;
+  padding: 0 1vw;
+  transition: .125s ease;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(1.2);
+}
+
+

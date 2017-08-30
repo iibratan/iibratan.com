@@ -7,7 +7,7 @@
 }
 
 .products_nav_header #back_button {
-  background: var(--warm-yellow);
+  background: var(--sand-gold);
   padding: 2% 4%;
   width: 5%;
 }
@@ -73,5 +73,5 @@
   align-items: center;
   height: 100%;
   padding: 0 4%;
-  background: var(--warm-yellow);
+  background: var(--sand-gold);
 }

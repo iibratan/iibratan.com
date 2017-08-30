@@ -1,0 +1,24 @@
+:host{
+  display: block;
+}
+
+.relation-group {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.group-title {
+  margin-right: .75%;
+  padding: .5%;
+  background: var(--sand-gold);
+}
+
+.related-product {
+  margin: 0 .25%;
+  padding: .5%;
+  background: var(--blackboard);
+  color: var(--sand-gold);
+  cursor: pointer;
+}
