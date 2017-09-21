@@ -41,6 +41,9 @@ import { ProductSummaryComponent } from './components/product/product-summary/pr
 import { RelatedProductsComponent } from './components/product/related-products/related-products.component';
 import { SuggestionCardComponent } from './components/product/suggestion-card/suggestion-card.component';
 import { SpecificationsCardComponent } from './components/product/specifications-card/specifications-card.component';
+import { PartnerAddProductComponent } from './components/partners/partner-add-product/partner-add-product.component';
+import { PartnerViewProductsComponent } from './components/partners/partner-view-products/partner-view-products.component';
+import { PartnerSidebarComponent } from './components/partners/dashboard/partner-sidebar/partner-sidebar.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -88,7 +91,10 @@ const appRoutes: Routes = [
     ProductSummaryComponent,
     RelatedProductsComponent,
     SuggestionCardComponent,
-    SpecificationsCardComponent
+    SpecificationsCardComponent,
+    PartnerAddProductComponent,
+    PartnerViewProductsComponent,
+    PartnerSidebarComponent
   ],
   imports: [
     BrowserModule,

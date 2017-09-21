@@ -8,11 +8,11 @@ import { SidebarService } from '../../services/sidebar.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  private showSideBar = true;
+  private showSearchBar = true;
 
   constructor( private router: Router, private __sidebarService: SidebarService) {
     this.router.events.subscribe(() => {
-      (this.router.url === '/') ? this.showSideBar = false : this.showSideBar = true;
+      (this.router.url === '/') ? this.showSearchBar = false : this.showSearchBar = true;
     });
   }
 

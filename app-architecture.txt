@@ -1,0 +1,95 @@
+app-root
+|---header
+	|***accounts
+	|---searchbar
+	|---cart-added-card
+|---sidebar
+	|***cart
+	|***products
+	|***accounts
+	|***sidebar-service
+	|---sidebar-card
+		|---sidebar-catalogue-card
+		|---sidebar-cart-card
+		|---sidebar-account-card
+			|---sidebar-account-cards @EMPHASIS ON CARDS
+			  |---sidebar-account-signin-Register
+			  |---sidebar-account-forgot password
+			  |---sidebar-account-account-detail
+		|---sidebar-home-card
+		|---sidebar-settings-card
+|---footer
+|---home
+	|***products
+	|---small-product-card
+	|---small-category-card
+|---product
+	|***products
+	|***cart
+	|---image-carousel
+	|---summary
+	|---related-products
+	|---product-cards
+		|---overview-card
+		|---details/specs
+		|---reviews
+	|---suggestions
+	    |---suggestion-card
+|---catalogue
+	|***product
+	|---catalogue-product-card
+	|---catalogue-product-small-card
+	|---catalogue-sub-category-card
+|---cart
+	|***cart
+	|---cart-items
+	|---cart-summary
+	|---checkout
+		|---address
+			|---existing-addresses
+			|---add-address
+		|---billing
+			|---existing-billing-info
+			|---add-new-billing-info
+		|---review
+			|---review-items
+			|---review-summary
+|---search
+	|***products
+	|***search
+	|---search-item
+	|---filters
+		|---filter-groups-card
+			|---custom-card @todo
+|---account
+	|***accounts
+	|---dashboard
+		|---option-cards
+		|---dashboard-dropdown
+			|---personal-information
+				|---name
+				|---email
+				|---password
+					|---dashboard-change-password
+					|---dashboard-forgot-password
+			|---address-book
+				|---address-item
+				|---add-address-form
+			|---orders
+				|---order-card
+					|---order-item
+|---build-a-pc
+	|***part-validation
+	|---@todo
+|---partners
+	|---partners-dashboard
+		|---partner-unfulfilled-orders
+		|---partner-order-analytics
+		|---partner-trends-chart
+		|---partner-top-trends-card
+		|---partner-options-card
+	|---product-add
+		|---basic-product-info-form
+		|---detailed-product-info-form
+	|---partner-listings
+		|---listing-item

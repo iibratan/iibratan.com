@@ -1,0 +1,105 @@
+app-partner-sidebar {
+  float: left;
+}
+
+.summary {
+  position: relative;
+  height: 100vh;
+  float: left;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/partner/bonfire-background.jpg") center center no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3vh 1.5vw;
+  height: 94vh;
+  min-width: 18vw;
+}
+
+.greeting {
+  padding: 1.5vh;
+  font-size: 1.5vw;
+  background: var(--frost-bg);
+}
+
+.section-header {
+  margin-bottom: 1vh;
+}
+
+.section-reverse-header {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.performance {
+  color: #b4b4b4;
+  float: right;
+}
+
+.summary-section {
+  padding: 1.5vh;
+  background: var(--frost-bg);
+}
+
+.order-content {
+  display: flex;
+}
+
+.order-card {
+  width: 100%;
+  text-align: center;
+}
+
+.order-card .value {
+  font-size: 3vw;
+}
+
+.history-content > div {
+  padding: .5vw 0 .25vw;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.history-content > div > .value {
+  float: right;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.view-more {
+  margin-top: 1vw;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.large-value {
+  text-align: center;
+  font-size: 2vmax;
+}
+
+.account-health {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-health > img {
+  max-height: 7vh;
+}
+
+.account-health > .value {
+  margin-top: 1.5vh;
+}

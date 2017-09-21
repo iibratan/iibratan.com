@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
 import { FirebaseService } from './services/firebase.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,15 @@ import { FirebaseService } from './services/firebase.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  private products;
+  headerActive = true;
+  footerActive = true;
 
-  constructor( private __firebase: FirebaseService ) { }
+  constructor( private __firebase: FirebaseService, private router: Router) {
+    this.router.events.subscribe(() => {
+      (this.router.url === '/partners') ? this.headerActive = false : this.headerActive = true;
+      (this.router.url === '/partners') ? this.footerActive = false : this.footerActive = true;
+    });
+  }
 
   ngOnInit() {
     firebase.initializeApp({
